@@ -251,10 +251,10 @@
           "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
         }
       },
-      "Microsoft.IdentityModel.JsonWebTokens/6.12.1": {
+      "Microsoft.IdentityModel.JsonWebTokens/6.12.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Tokens": "6.12.1"
+          "Microsoft.IdentityModel.Tokens": "6.12.2"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
@@ -263,7 +263,7 @@
           "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
         }
       },
-      "Microsoft.IdentityModel.Logging/6.12.1": {
+      "Microsoft.IdentityModel.Logging/6.12.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {}
@@ -272,11 +272,11 @@
           "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {}
         }
       },
-      "Microsoft.IdentityModel.Tokens/6.12.1": {
+      "Microsoft.IdentityModel.Tokens/6.12.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.5.0",
-          "Microsoft.IdentityModel.Logging": "6.12.1",
+          "Microsoft.IdentityModel.Logging": "6.12.2",
           "System.Security.Cryptography.Cng": "4.5.0"
         },
         "compile": {
@@ -377,7 +377,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "NistagramSQLConnection/1.0.5": {
+      "NistagramSQLConnection/1.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.9",
@@ -392,12 +392,12 @@
           "lib/net5.0/NistagramSQLConnection.dll": {}
         }
       },
-      "NistagramUtils/1.0.6": {
+      "NistagramUtils/1.0.7": {
         "type": "package",
         "dependencies": {
           "AutoMapper": "10.1.1",
-          "NistagramSQLConnection": "1.0.5",
-          "System.IdentityModel.Tokens.Jwt": "6.12.1"
+          "NistagramSQLConnection": "1.0.6",
+          "System.IdentityModel.Tokens.Jwt": "6.12.2"
         },
         "compile": {
           "lib/net5.0/NistagramUtils.dll": {}
@@ -551,11 +551,11 @@
           }
         }
       },
-      "System.IdentityModel.Tokens.Jwt/6.12.1": {
+      "System.IdentityModel.Tokens.Jwt/6.12.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.JsonWebTokens": "6.12.1",
-          "Microsoft.IdentityModel.Tokens": "6.12.1"
+          "Microsoft.IdentityModel.JsonWebTokens": "6.12.2",
+          "Microsoft.IdentityModel.Tokens": "6.12.2"
         },
         "compile": {
           "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {}
@@ -1171,10 +1171,10 @@
         "version.txt"
       ]
     },
-    "Microsoft.IdentityModel.JsonWebTokens/6.12.1": {
-      "sha512": "0rMYegsigcKccO3pmpFY3Q9RkElMIaZgqtvRXz2T1DCc9fjhWudJsliURY0kSMYIl4R+MPfED945HF+URimvLg==",
+    "Microsoft.IdentityModel.JsonWebTokens/6.12.2": {
+      "sha512": "krI9z6wjjIMCoQRmRicPt5oy9qrpCyXJhopkv4L+8uoN8l+NTmyv+gUCxkZKjiBqChgCL4cMvYCAkVdbjgpj+g==",
       "type": "package",
-      "path": "microsoft.identitymodel.jsonwebtokens/6.12.1",
+      "path": "microsoft.identitymodel.jsonwebtokens/6.12.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1186,14 +1186,14 @@
         "lib/net472/Microsoft.IdentityModel.JsonWebTokens.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.xml",
-        "microsoft.identitymodel.jsonwebtokens.6.12.1.nupkg.sha512",
+        "microsoft.identitymodel.jsonwebtokens.6.12.2.nupkg.sha512",
         "microsoft.identitymodel.jsonwebtokens.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.Logging/6.12.1": {
-      "sha512": "6ZQV/76CpdsSacIKw6qZypP1AlEJsORl7Hps763PN0I92DJpwFrl0zkUmQUUFMJsW3iLo570I1IHeJvdsNWgIA==",
+    "Microsoft.IdentityModel.Logging/6.12.2": {
+      "sha512": "MGjGS5PIxGOdDSo3DzjqZ4qfy2i75R/CGE3aehCkflb4Brh617jg5F6GoFze321PMK1bjqiqQUFtGVuMKojDWg==",
       "type": "package",
-      "path": "microsoft.identitymodel.logging/6.12.1",
+      "path": "microsoft.identitymodel.logging/6.12.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1205,14 +1205,14 @@
         "lib/net472/Microsoft.IdentityModel.Logging.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.Logging.xml",
-        "microsoft.identitymodel.logging.6.12.1.nupkg.sha512",
+        "microsoft.identitymodel.logging.6.12.2.nupkg.sha512",
         "microsoft.identitymodel.logging.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.Tokens/6.12.1": {
-      "sha512": "m2mSP82NFq2o6pOPrAnANc9hRJ+0koiy2RHdlr2FRSOF3C5c5IEVaO7IRFPKRCnvcSeEJF5kWUVoJmpEAutoFw==",
+    "Microsoft.IdentityModel.Tokens/6.12.2": {
+      "sha512": "qG/UJzrcPYVEMHgP6X4Nko0yeLIwr4dM2qZvIC91WYMmt1zGvDWW9ybqGBOQAs3A5Wf2M1PozobHDGRW3MmINQ==",
       "type": "package",
-      "path": "microsoft.identitymodel.tokens/6.12.1",
+      "path": "microsoft.identitymodel.tokens/6.12.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1224,7 +1224,7 @@
         "lib/net472/Microsoft.IdentityModel.Tokens.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.xml",
-        "microsoft.identitymodel.tokens.6.12.1.nupkg.sha512",
+        "microsoft.identitymodel.tokens.6.12.2.nupkg.sha512",
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
@@ -1393,28 +1393,28 @@
         "packageIcon.png"
       ]
     },
-    "NistagramSQLConnection/1.0.5": {
-      "sha512": "NlwUnUbhcjAF6WpT0FlM5ayb1j63bRG5MxEILOB4pivYQXvayVrVanxBgK8RiCszoQM6IOeKDaACeCdBYPfsmg==",
+    "NistagramSQLConnection/1.0.8": {
+      "sha512": "YmUBLFSh94Zr2jY1RusGL1j9AZ9259IiGSKPOj9oZp9nMeQ2XAs2vjZw/lxwHmew9Ae7WEdXwpfai/plR6515Q==",
       "type": "package",
-      "path": "nistagramsqlconnection/1.0.5",
+      "path": "nistagramsqlconnection/1.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net5.0/NistagramSQLConnection.dll",
         "lib/net5.0/NistagramSQLConnection.runtimeconfig.json",
-        "nistagramsqlconnection.1.0.5.nupkg.sha512",
+        "nistagramsqlconnection.1.0.8.nupkg.sha512",
         "nistagramsqlconnection.nuspec"
       ]
     },
-    "NistagramUtils/1.0.6": {
-      "sha512": "a8gjapad4IGWGcZcILm7A7CuUtUGzKe3xFTN9OJ9V4aXnyzGbLeVsKA3Wedy271b3BRcSeeVltIk/GSWGMBHDw==",
+    "NistagramUtils/1.0.7": {
+      "sha512": "JguxNc+9hGDRc2T6BSx9rve7YZu+wUzPbB7QoWjxLwb1+1YYKMLTnv37eNoC/DPKRWGdg0Wm8phH3LMrT0b6gQ==",
       "type": "package",
-      "path": "nistagramutils/1.0.6",
+      "path": "nistagramutils/1.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net5.0/NistagramUtils.dll",
-        "nistagramutils.1.0.6.nupkg.sha512",
+        "nistagramutils.1.0.7.nupkg.sha512",
         "nistagramutils.nuspec"
       ]
     },
@@ -1752,10 +1752,10 @@
         "version.txt"
       ]
     },
-    "System.IdentityModel.Tokens.Jwt/6.12.1": {
-      "sha512": "2HgriovEBDX0XeV6G/N6eMkAy4LgrTtaGjVOjOc9tLXdKdkIpzrIT3/6o0MzBig3dIsmgXln+roFejJlcoTtdw==",
+    "System.IdentityModel.Tokens.Jwt/6.12.2": {
+      "sha512": "EuH4UucURwusIGhZNJFI3dS8d6voaaF00v9ezllvn5AlJk+5O5LC7rH967ktWbFeTTYlQx3ltlcRp1hW4VXKWQ==",
       "type": "package",
-      "path": "system.identitymodel.tokens.jwt/6.12.1",
+      "path": "system.identitymodel.tokens.jwt/6.12.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1767,7 +1767,7 @@
         "lib/net472/System.IdentityModel.Tokens.Jwt.xml",
         "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll",
         "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.xml",
-        "system.identitymodel.tokens.jwt.6.12.1.nupkg.sha512",
+        "system.identitymodel.tokens.jwt.6.12.2.nupkg.sha512",
         "system.identitymodel.tokens.jwt.nuspec"
       ]
     },
@@ -2176,26 +2176,25 @@
     "net5.0": [
       "AutoMapper >= 10.1.1",
       "Newtonsoft.Json >= 13.0.1",
-      "NistagramSQLConnection >= 1.0.5",
-      "NistagramUtils >= 1.0.6",
+      "NistagramSQLConnection >= 1.0.8",
+      "NistagramUtils >= 1.0.7",
       "Swashbuckle.AspNetCore >= 6.1.5"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pc4y\\.nuget\\packages\\": {}
+    "C:\\Users\\Jovan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\MAC\\DevOpsProject\\NistagramOfflineAPI\\NistagramOfflineAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Jovan\\Desktop\\DevOps\\NistagramOfflineAPI\\NistagramOfflineAPI.csproj",
       "projectName": "NistagramOfflineAPI",
-      "projectPath": "G:\\MAC\\DevOpsProject\\NistagramOfflineAPI\\NistagramOfflineAPI.csproj",
-      "packagesPath": "C:\\Users\\pc4y\\.nuget\\packages\\",
-      "outputPath": "G:\\MAC\\DevOpsProject\\NistagramOfflineAPI\\obj\\",
+      "projectPath": "C:\\Users\\Jovan\\Desktop\\DevOps\\NistagramOfflineAPI\\NistagramOfflineAPI.csproj",
+      "packagesPath": "C:\\Users\\Jovan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jovan\\Desktop\\DevOps\\NistagramOfflineAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "G:\\MAC\\DevOpsProject\\NistagramBackend\\NuGet.Config",
-        "C:\\Users\\pc4y\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jovan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2231,11 +2230,11 @@
           },
           "NistagramSQLConnection": {
             "target": "Package",
-            "version": "[1.0.5, )"
+            "version": "[1.0.8, )"
           },
           "NistagramUtils": {
             "target": "Package",
-            "version": "[1.0.6, )"
+            "version": "[1.0.7, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
@@ -2260,7 +2259,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
