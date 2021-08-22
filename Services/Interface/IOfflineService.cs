@@ -1,8 +1,5 @@
-﻿using System;
+﻿using NistagramSQLConnection.Model;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using NistagramSQLConnection.Model;
 
 namespace NistagramOfflineAPI.Services
 {
