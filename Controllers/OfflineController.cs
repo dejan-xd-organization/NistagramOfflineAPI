@@ -11,7 +11,7 @@ using System.Collections.Generic;
 namespace NistagramOfflineAPI.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     public class OfflineController : ControllerBase
     {
 
