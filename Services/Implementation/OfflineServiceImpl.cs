@@ -1,6 +1,7 @@
 ﻿using NistagramSQLConnection.Model;
 using NistagramSQLConnection.Service.Interface;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace NistagramOfflineAPI.Services
 {
@@ -28,7 +29,16 @@ namespace NistagramOfflineAPI.Services
 
         public List<WallPost> GetAllWallPosts()
         {
-            return _iPostService.GetAllWallPosts(false);
+            List<WallPost> wallPosts = _iPostService.GetAllWallPosts(false);
+            foreach (WallPost wp in wallPosts)
+            {
+                var i = wp.userPosts.Select(x => x.userId).FirstOrDefault();
+                User user = _iUserService.FindUserById(i, true);
+
+                var j = wp.postReactions.Select(x => x.reactionId).ToList();
+                List<Reaction> reactions = _iPostService.GetAllReactions(j);
+            }
+            return wallPosts;
         }
     }
 }

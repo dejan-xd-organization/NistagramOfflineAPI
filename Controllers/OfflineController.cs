@@ -7,6 +7,7 @@ using NistagramUtils.DTO;
 using NistagramUtils.DTO.WallPost;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace NistagramOfflineAPI.Controllers
 {
@@ -44,11 +45,16 @@ namespace NistagramOfflineAPI.Controllers
 
         [HttpGet]
         [Route("/[action]")]
-        public Object GetAllPosts()
+        public Object GetAllWallPosts()
         {
             List<WallPost> post = _iOfflineService.GetAllWallPosts();
-            List<WallPostDto> postDTO = _mapper.Map<List<WallPostDto>>(post);
-            return JsonConvert.SerializeObject(postDTO);
+            List<WallPostDto> postDtos = new List<WallPostDto>(post.Count);
+            foreach (WallPost wp in post)
+            {
+                postDtos.Add(new WallPostDto(wp, wp.userPosts.Select(x => x.user).FirstOrDefault(), wp.postReactions));
+            }
+            //List<WallPostDto> postDTO = _mapper.Map<List<WallPostDto>>(post);
+            return JsonConvert.SerializeObject(postDtos);
         }
     }
 }
