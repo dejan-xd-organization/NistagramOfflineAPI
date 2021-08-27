@@ -1,17 +1,17 @@
-﻿using AutoMapper;
+﻿using System;
+using System.Collections.Generic;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using NistagramOfflineAPI.Services;
 using NistagramSQLConnection.Model;
 using NistagramUtils.DTO;
 using NistagramUtils.DTO.WallPost;
-using System;
-using System.Collections.Generic;
 
 namespace NistagramOfflineAPI.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     public class OfflineController : ControllerBase
     {
 
@@ -44,11 +44,10 @@ namespace NistagramOfflineAPI.Controllers
 
         [HttpGet]
         [Route("/[action]")]
-        public Object GetAllPosts()
+        public Object GetAllWallPosts()
         {
-            List<WallPost> post = _iOfflineService.GetAllWallPosts();
-            List<WallPostDto> postDTO = _mapper.Map<List<WallPostDto>>(post);
-            return JsonConvert.SerializeObject(postDTO);
+            List<WallPostDto> wallPostDto = _iOfflineService.GetAllWallPosts(true, 1, 20);
+            return JsonConvert.SerializeObject(wallPostDto);
         }
     }
 }
