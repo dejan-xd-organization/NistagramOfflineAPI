@@ -1,6 +1,6 @@
-﻿using NistagramSQLConnection.Model;
+﻿using System.Collections.Generic;
+using NistagramSQLConnection.Model;
 using NistagramUtils.DTO.WallPost;
-using System.Collections.Generic;
 
 namespace NistagramOfflineAPI.Services
 {
