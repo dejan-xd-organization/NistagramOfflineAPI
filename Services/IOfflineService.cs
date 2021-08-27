@@ -1,4 +1,5 @@
 ﻿using NistagramSQLConnection.Model;
+using NistagramUtils.DTO.WallPost;
 using System.Collections.Generic;
 
 namespace NistagramOfflineAPI.Services
@@ -7,6 +8,6 @@ namespace NistagramOfflineAPI.Services
     {
         List<User> FilterUser(string filter);
         List<User> FindNewUsers();
-        List<WallPost> GetAllWallPosts();
+        List<WallPostDto> GetAllWallPosts(bool isPublic, int page, int limit);
     }
 }

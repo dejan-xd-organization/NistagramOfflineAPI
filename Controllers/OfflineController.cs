@@ -47,14 +47,8 @@ namespace NistagramOfflineAPI.Controllers
         [Route("/[action]")]
         public Object GetAllWallPosts()
         {
-            List<WallPost> post = _iOfflineService.GetAllWallPosts();
-            List<WallPostDto> postDtos = new List<WallPostDto>(post.Count);
-            foreach (WallPost wp in post)
-            {
-                postDtos.Add(new WallPostDto(wp, wp.userPosts.Select(x => x.user).FirstOrDefault(), wp.postReactions));
-            }
-            //List<WallPostDto> postDTO = _mapper.Map<List<WallPostDto>>(post);
-            return JsonConvert.SerializeObject(postDtos);
+            List<WallPostDto> wallPostDto = _iOfflineService.GetAllWallPosts(true, 1, 20);
+            return JsonConvert.SerializeObject(wallPostDto);
         }
     }
 }

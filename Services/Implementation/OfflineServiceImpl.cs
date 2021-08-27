@@ -1,5 +1,6 @@
 ﻿using NistagramSQLConnection.Model;
 using NistagramSQLConnection.Service.Interface;
+using NistagramUtils.DTO.WallPost;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -27,18 +28,25 @@ namespace NistagramOfflineAPI.Services
             return _iUserService.FindNewUsers();
         }
 
-        public List<WallPost> GetAllWallPosts()
+        public List<WallPostDto> GetAllWallPosts(bool isPublic, int page, int limit)
         {
-            List<WallPost> wallPosts = _iPostService.GetAllWallPosts(false);
-            foreach (WallPost wp in wallPosts)
+            List<bool> isPublics = new List<bool>();
+            if (!isPublic)
             {
-                var i = wp.userPosts.Select(x => x.userId).FirstOrDefault();
-                User user = _iUserService.FindUserById(i, true);
-
-                var j = wp.postReactions.Select(x => x.reactionId).ToList();
-                List<Reaction> reactions = _iPostService.GetAllReactions(j);
+                isPublics.Add(true);
+                isPublics.Add(false);
             }
-            return wallPosts;
+            else isPublics.Add(true);
+
+            List<WallPost> wallPost = _iPostService.GetAllWallPosts(isPublics, page, 20);
+            List<WallPostDto> wallPostDto = new List<WallPostDto>(wallPost.Count);
+
+            foreach (WallPost wp in wallPost)
+            {
+                wallPostDto.Add(new WallPostDto(wp));
+            }
+
+            return wallPostDto;
         }
     }
 }
