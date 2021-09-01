@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using NistagramSQLConnection.Model;
 using NistagramSQLConnection.Service.Interface;
+using NistagramUtils.DTO;
 using NistagramUtils.DTO.WallPost;
 
 namespace NistagramOfflineAPI.Services
@@ -46,6 +47,26 @@ namespace NistagramOfflineAPI.Services
             }
 
             return wallPostDto;
+        }
+
+        public UserDto FindUserById(long id, bool isPublicProfile)
+        {
+            List<bool> isPublic = new List<bool>();
+            if (isPublicProfile)
+            {
+                isPublic.Add(true);
+                isPublic.Add(false);
+            }
+            else
+            {
+                isPublic.Add(false);
+            }
+
+            User user = _iUserService.FindUserById(id, isPublic);
+
+            if (user != null) return new UserDto(user, user.isPublicProfile);
+            else return null;
+
         }
     }
 }

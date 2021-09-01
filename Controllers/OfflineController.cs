@@ -49,5 +49,13 @@ namespace NistagramOfflineAPI.Controllers
             List<WallPostDto> wallPostDto = _iOfflineService.GetAllWallPosts(true, 1, 20);
             return JsonConvert.SerializeObject(wallPostDto);
         }
+
+        [HttpGet]
+        [Route("/[action]")]
+        public Object FindUserById(long id, bool isPublicProfile)
+        {
+            UserDto userDto = _iOfflineService.FindUserById(id, isPublicProfile);
+            return JsonConvert.SerializeObject(userDto);
+        }
     }
 }
